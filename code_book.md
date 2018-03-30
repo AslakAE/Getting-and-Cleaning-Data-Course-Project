@@ -1,6 +1,4 @@
----
-title: "Code book"
----
+# Code book
 
 This code book summarizes the file ```tidydata.txt```.
 
