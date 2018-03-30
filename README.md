@@ -1,6 +1,4 @@
----
-title: "README"
----
+# README
 
 This is a project delivery for the Coursera course "Getting and Cleaning Data", which is a course in the Data Science specialization by Johns Hopkins University. The intention of the script is to use wearable computing data from a publication [1] and prepare a tidy data set that can be used for later analysis. 
 
