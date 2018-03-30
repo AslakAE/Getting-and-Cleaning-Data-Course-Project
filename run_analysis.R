@@ -17,7 +17,7 @@ y_test <- read.table("./UCI HAR Dataset/test/y_test.txt")
 features <- read.table("./UCI HAR Dataset/features.txt")
 activity_labels <- read.table("./UCI HAR Dataset/activity_labels.txt")
 
-# Create "Source" columns to indicate where the data comes from
+# Create "source" columns to indicate where the data comes from
 subject_train <- mutate(subject_train, source = "train")
 subject_test <- mutate(subject_test, source = "test")
 
@@ -26,8 +26,8 @@ subject_comb <- rbind(subject_train, subject_test)
 y_comb <- rbind(y_train, y_test)
 X_comb <- rbind(X_train, X_test)
 
-# Name variables and variables correctly for subject, X, and y file
-# Subjects: one operation is sufficient - change variable name
+# Name variables correctly for subject, X, and y file
+# subjects: one operation is sufficient - change variable name
 subject_comb <- rename(subject_comb, subject = V1)
 # y and activity labels: Change variable names
 y_comb <- rename(y_comb, activity_number = V1)
